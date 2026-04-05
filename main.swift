@@ -249,11 +249,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKUIDelegate {
 
     private func setupStatusBarMenu() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.button?.title = "▶ Notch"
+        statusItem.button?.title = "NotchTube"
         let menu = NSMenu()
-        menu.addItem(withTitle: "Göster / Gizle", action: #selector(togglePanel), keyEquivalent: "")
+        menu.addItem(withTitle: "Show / Hide", action: #selector(togglePanel), keyEquivalent: "")
         menu.addItem(.separator())
-        menu.addItem(withTitle: "Çıkış", action: #selector(quitApp), keyEquivalent: "q")
+        menu.addItem(withTitle: "Exit", action: #selector(quitApp), keyEquivalent: "q")
         statusItem.menu = menu
     }
 
