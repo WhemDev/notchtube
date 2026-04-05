@@ -9,7 +9,7 @@ APP_BUNDLE="$BUILD_DIR/$APP_NAME.app"
 rm -rf "$APP_BUNDLE"
 mkdir -p "$APP_BUNDLE/Contents/MacOS"
 
-echo "Derleniyor..."
+echo "Building..."
 swiftc -framework Cocoa -framework WebKit \
     -o "$APP_BUNDLE/Contents/MacOS/$APP_NAME" \
     "$SCRIPT_DIR/main.swift"
@@ -41,5 +41,5 @@ cat > "$APP_BUNDLE/Contents/Info.plist" << 'EOF'
 </plist>
 EOF
 
-echo "✓ Build tamamlandı: $APP_BUNDLE"
-echo "  Çalıştırmak için: open $APP_BUNDLE"
+echo "✓ Build complete: $APP_BUNDLE"
+echo "  Run: open $APP_BUNDLE"

@@ -172,7 +172,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKUIDelegate {
         <html><body style="background:#0a0a0a;color:#484848;display:flex;align-items:center;\
         justify-content:center;height:100vh;margin:0;font-family:-apple-system,sans-serif;\
         font-size:13px;-webkit-user-select:none">\
-        <div style="text-align:center;line-height:1.6">▶︎<br>YouTube URL yapıştırın</div>\
+        <div style="text-align:center;line-height:1.6">▶︎<br>Paste a YouTube URL</div>\
         </body></html>
         """
         webView.loadHTMLString(html, baseURL: nil)
